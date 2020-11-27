@@ -1,7 +1,7 @@
 def prime?(number)
-  start = 2
+  begin = 2
   if number > 1
-    range = (start..number-1).to_a
+    range = (begin..number-1).to_a
     range.none? do |test_num|
       number % test_num == 0
     end
